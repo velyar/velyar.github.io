@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main_header">
+        <div class="container clearfix">
+            <div class="logo">
+                <a>
+                    <img src="img/logo.png" width="160" height="65" alt="Логотип Нёрдс">
+                </a>
+            </div>
+            <nav class="main_navigation">
+                <ul>
+                    <li>
+                        <a class="active" href="#">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a href="catalog.html">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="basket">
+                <a href="#">Корзина</a>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="container clearfix">
+                <input type="radio" id="btn_1" name="toggle" checked>
+                <input type="radio" id="btn_2" name="toggle">
+                <input type="radio" id="btn_3" name="toggle">
+                <div class="slider_controls">
+                    <label for="btn_1"></label>
+                    <label for="btn_2"></label>
+                    <label for="btn_3"></label>
+                </div>
+                <div class="slides">
+                    <div class="slide">
+                        <div class="slide_discription">
+                            <div class="slide_title">
+                                Долго, дорого, скрупулезно.
+                            </div>
+                            <p>
+                                Математически выверенный дизайн<br>
+                                для вашего сайта или мобильного приложения.
+                            </p>
+                            <a class="slide_btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_discription">
+                            <div class="slide_title">
+                                Любим математику как никто другой
+                            </div>
+                            <p>
+                                Никакого креатива, только математические формулы<br>
+                                для расчета идеальных пропорций.
+                            </p>
+                            <a class="slide_btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_discription">
+                            <div class="slide_title">
+                                Только ночь,<br> только хардкор
+                            </div>
+                            <p>
+                                Работать ночью, как все? Мы против этого.<br>
+                                Ближе к полуночи работа только начинается.
+                            </p>
+                            <a class="slide_btn" href="#">Узнать больше</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <section class="services clearfix">
+            <div class="service_item">
+                <img src="img/service_item_1.jpg" width="300" height="146" alt="Веб-сайты">
+                <h2>Веб-сайты</h2>
+                <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+                <a class="btn_order btn_red" href="#">Заказать</a>
+            </div>
+            <div class="service_item">
+                <img src="img/service_item_2.jpg" width="300" height="146" alt="Приложения">
+                <h2>Приложения</h2>
+                <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+                <a class="btn_order btn_green" href="#">Заказать</a>
+            </div>
+            <div class="service_item">
+                <img src="img/service_item_3.jpg" width="300" height="146" alt="Презентации">
+                <h2>Презентации</h2>
+                <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+                <a class="btn_order btn_yellow" href="#">Заказать</a>
+            </div>
+        </section>
+        <section class="about_us clearfix">
+            <div class="about_us_left">
+                <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+                    превыше креатива. Работаем не покладая рук, как роботы.
+                </p>
+                <b>Выполняем заказы на разработку:</b>
+                <ul>
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </div>
+            <div class="about_us_right">
+                <img src="img/about_us_right.jpg" width="360" height="208" alt="О нас">
+                <b>С 2004 года любим точность во всем:</b>
+                <ul class="advantages clearfix">
+                    <li class="advantage">
+                        <div class="percent">146<sup>%</sup></div>
+                        <p>Уровень самоотдачи</p>
+                    </li>
+                    <li class="advantage">
+                        <div class="percent">100<sup>%</sup></div>
+                        <p>Соблюдение сроков</p>
+                    </li>
+                    <li class="advantage">
+                        <div class="percent">50<sup>%</sup></div>
+                        <p>Минимальная предоплата</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio">
+            <!--<h2 class="hide_header">Наши клиенты</h2>-->
+            <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+                <img src="img/portfolio_1.png" width="199" height="68" alt="HTML Academy">
+            </a>
+            <a href="#">
+                <img src="img/portfolio_2.png" width="209" height="90" alt="Barbershop Borodinski">
+            </a>
+            <a href="#">
+                <img src="img/portfolio_3.png" width="182" height="52" alt="Pink">
+            </a>
+            <a href="#">
+                <img src="img/portfolio_4.png" width="173" height="84" alt="Mishka">
+            </a>
+        </section>
+    </main>
+    <footer class="container_footer">
+        <div class="footer_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616394266!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494491050123" allowfullscreen></iframe>
+            <div class="container">
+                <div class="address">
+                    <h3>Nёrds design studio</h3>
+                    <p>191186, Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a class="btn_address" href="#">Напишите нам</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container clearfix">
+                <div class="footer_bottom_left">
+                    <a class="btn_social btn_social_vk" href="#">Вконтакте</a>
+                    <a class="btn_social btn_social_fb" href="#">Фейсбук</a>
+                    <a class="btn_social btn_social_inst" href="#">Инстаграм</a>
+                </div>
+                <div class="footer_bottom_right">
+                    <p>Давайте дружить, это выгодно!</p>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal_content">
+        <button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal_content_title">Напишите нам</h2>
+        <form class="modal_content_form" action="https://echo.htmlacademy.ru" method="post">
+            <label>Ваше имя:<input class="js_login_field" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
+            <label>Ваш e-mail:<input class="js_email_field" type="email" name="email" placeholder="Для отправки ответа"></label>
+            <label>Текст письма:<textarea class="js_area_field" name="message" placeholder="В свободной форме"></textarea></label>
+            <button class="btn_modal" type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
