@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>HTML Academy: Каталог Нёрдс</title>
+  </head>
+  <body>
+    <header class="main_header">
+        <div class="container clearfix">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" width="160" height="65" alt="Логотип Нёрдс">
+                </a>
+            </div>
+            <nav class="main_navigation">
+                <ul>
+                    <li>
+                        <a href="index.html">Студия</a>
+                    </li>
+                    <li>
+                        <a href="#">Клиенты</a>
+                    </li>
+                    <li>
+                        <a class="active" href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="basket">
+                <a href="#">Корзина</a>
+            </div>
+            <div class="catalog_title">
+                <h1>Магазин готовых шаблонов</h1>
+            </div>
+        </div>
+    </header>
+    <main class="main_catalog container clearfix">
+        <div class="container_filters">
+            <form action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="range_filter">
+                    <legend>Стоимость:</legend>
+                    <div class="range_controls">
+                        <div class="scale">
+                            <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggle_min"></div>
+                        <div class="toggle toggle_max"></div>
+                    </div>
+                    <div class="price_controls">
+                        <label class="min_price">от <input type="text" name="min_price" value="0"></label>
+                        <label class="max_price">до <input type="text" name="max_price" value="15 000"></label>
+                    </div>
+                </fieldset>
+                <fieldset class="radio_filter">
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="radio" value="adaptive" id="adaptive" checked>
+                            <label for="adaptive">Адаптивная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio" value="fixed" id="fixed">
+                            <label for="fixed">Фиксированная</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio" value="rubber" id="rubber">
+                            <label for="rubber">Резиновая</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <fieldset class="features_filter">
+                    <legend>Особенности:</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="feature" value="slider" id="slider" checked>
+                            <label class="filter_checkbox" for="slider">
+                                <span class="checkbox_indication"></span>
+                                Слайдер
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="feature" value="advantages" id="advantages">
+                            <label class="filter_checkbox" for="advantages">
+                                <span class="checkbox_indication"></span>
+                                Блок преимуществ
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="feature" value="news" id="news" checked>
+                            <label class="filter_checkbox" for="news">
+                                <span class="checkbox_indication"></span>
+                                Новости
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="feature" value="gallery" id="gallery">
+                            <label class="filter_checkbox" for="gallery">
+                                <span class="checkbox_indication"></span>
+                                Галерея
+                            </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="feature" value="basket" id="basket">
+                            <label class="filter_checkbox" for="basket">
+                                <span class="checkbox_indication"></span>
+                                Корзина
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button class="submit_btn" type="submit">Показать</button>
+            </form>
+        </div>
+        <div class="container_templates">
+            <div class="sorting_templates clearfix">
+                <span>Сортировать:</span>
+                <div class="sorting_type">
+                    <a href="#">По цене</a>
+                    <a href="#">По типу</a>
+                    <a href="#">По названию</a>
+                </div>
+                <div class="sorting_arrows">
+                    <button class="down active" type="button"></button>
+                    <button class="up" type="button"></button>
+                </div>
+            </div>
+            <section class="templates">
+                <article class="template">
+                    <img src="img/template_sedona.jpg" width="360" height="576" alt="Sedona">
+                    <div class="template_details">
+                        <h3><a href="#">Sedona</a></h3>
+                        <div class="template_description">Информационный сайт для туристов</div>
+                        <a class="template_price" href="#">9 900 руб.</a>
+                    </div>
+                </article>
+                <article class="template">
+                    <img src="img/template_pink.jpg" width="360" height="576" alt="Pink">
+                    <div class="template_details">
+                        <h3><a href="#">Pink Up</a></h3>
+                        <div class="template_description">Продуктовый лендинг приложения для iOS и Android</div>
+                        <a class="template_price" href="#">9 900 руб.</a>
+                    </div>
+                </article>
+                <article class="template">
+                    <img src="img/template_barbershop.jpg" width="360" height="576" alt="Borodinski">
+                    <div class="template_details">
+                        <h3><a href="#">Barbershop</a></h3>
+                        <div class="template_description">Сайт салона красоты. <br> Для мужчин, да.</div>
+                        <a class="template_price" href="#">9 900 руб.</a>
+                    </div>
+                </article>
+                <article class="template">
+                    <img src="img/template_mishka.jpg" width="360" height="576" alt="Mishka">
+                    <div class="template_details">
+                        <h3><a href="#">Mishka</a></h3>
+                        <div class="template_description">Интернет-магазин вязаных игрушек</div>
+                        <a class="template_price" href="#">9 900 руб.</a>
+                    </div>
+                </article>
+                <article class="template">
+                    <img src="img/template_aplus.jpg" width="360" height="576" alt="A_plus">
+                    <div class="template_details">
+                        <h3><a href="#">A Plus</a></h3>
+                        <div class="template_description">Лендинг курсов повышения квалификации</div>
+                        <a class="template_price" href="#">9 900 руб.</a>
+                    </div>
+                </article>
+                <article class="template">
+                    <img src="img/template_kvast.jpg" width="360" height="576" alt="Kvast">
+                    <div class="template_details">
+                        <h3><a href="#">Кваст</a></h3>
+                        <div class="template_description">Промо-сайт производителя крафтового кваса</div>
+                        <a class="template_price" href="#">9 900 руб.</a>
+                    </div>
+                </article>
+            </section>
+            <nav class="pagination">
+                <a class="page current" href="#">1</a>
+                <a class="page" href="#">2</a>
+                <a class="page" href="#">3</a>
+                <a class="page next" href="#">Следующая</a>
+            </nav>
+        </div>
+    </main>
+    <footer class="container_footer">
+        <div class="footer_map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.59910436516!2d30.320894616394266!3d59.93879418187623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1494491050123" allowfullscreen></iframe>
+            <div class="container">
+                <div class="address">
+                    <h3>Nёrds design studio</h3>
+                    <p>191186, Санкт-Петербург, ул.Б.Конюшенная, д. 19/8</p>
+                    <p>тел. +7 (812) 275-75-75</p>
+                    <a class="btn_address" href="#">Напишите нам</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container clearfix">
+                <div class="footer_bottom_left">
+                    <a class="btn_social btn_social_vk" href="#">Вконтакте</a>
+                    <a class="btn_social btn_social_fb" href="#">Фейсбук</a>
+                    <a class="btn_social btn_social_inst" href="#">Инстаграм</a>
+                </div>
+                <div class="footer_bottom_right">
+                    <p>Давайте дружить, это выгодно!</p>
+                    <p>Скидка 10% для друзей из социальных сетей.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal_content">
+        <button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+        <h2 class="modal_content_title">Напишите нам</h2>
+        <form class="modal_content_form" action="https://echo.htmlacademy.ru" method="post">
+            <label>Ваше имя:<input class="js_login_field" type="text" name="login" placeholder="Представьтесь, пожалуйста"></label>
+            <label>Ваш e-mail:<input class="js_email_field" type="email" name="email" placeholder="Для отправки ответа"></label>
+            <label>Текст письма:<textarea class="js_area_field" name="message" placeholder="В свободной форме"></textarea></label>
+            <button class="btn_modal" type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="js/popup.js"></script>
+  </body>
+</html>
